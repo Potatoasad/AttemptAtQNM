@@ -12,9 +12,9 @@ following the techniques highlighted in the following paper.
 ```julia
 using AttemptAtQNM
 
-₂𝝭₂₁ = qnm(l=2,m=1,s=2)
+ψ = qnm(l=2,m=1,s=2)
 
-₂ω₂₁, ₂A₂₁ = ₂ψ₂₁(a=0.1)
+ω, Aₗₘ = ψ(a=0.1)
 
 println("The Quasi-normal Mode Frequency ω for ₂𝝭₂₁ is $(ω₂₂₁)")
 println("The Angular Eigenvalue ₛAₗₘ for ₂𝝭₂₁ is $(A₂₂₁)")
