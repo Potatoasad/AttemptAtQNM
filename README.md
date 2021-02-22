@@ -9,7 +9,7 @@ following the techniques highlighted in the following paper.
 
 ## Usage
 
-'''julia
+```julia
 using AttemptAtQNM
 
 𝝭₂₂₁ = qnm(l=2,m=1,s=2)
@@ -19,4 +19,4 @@ using AttemptAtQNM
 println("The Quasi-normal Mode Frequency ω for ₂𝝭₂₁ is $(ω₂₂₁)")
 println("The Angular Eigenvalue ₛAₗₘ for ₂𝝭₂₁ is $(A₂₂₁)")
 
-'''
+```
