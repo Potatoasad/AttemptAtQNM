@@ -3,10 +3,14 @@ module SpectralSolver
 using LinearAlgebra
 
 function Fₛ(s,l,m)
-    num1 = (l+1)^2 - m^2
-    num2 = (l+1)^2 - s^2
-    denom = (2*l+3)*(2*l+1)*(l+1)^2
-    sqrt(num1*num2/denom)
+    if l < min(abs(s),abs(m))
+        return 0.0
+    else
+        num1 = (l+1)^2 - m^2
+        num2 = (l+1)^2 - s^2
+        denom = (2*l+3)*(2*l+1)*(l+1)^2
+        return sqrt(num1*num2/denom)
+    end
 end
 
 function Gₛ(s,l,m)
